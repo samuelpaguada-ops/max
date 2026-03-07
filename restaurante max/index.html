@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Brasa | Restaurante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="navbar container">
+        <a class="brand" href="#inicio">Casa Brasa</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#espacios">Espacios</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="tag">Cocina de autor • Ambiente elegante</p>
+        <h1>Una experiencia gastronómica para recordar</h1>
+        <p>
+          Disfruta platos exclusivos, bebidas artesanales y todos los productos de nuestra casa.
+        </p>
+        <a class="btn" href="#productos">Ver productos y servicios</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="menu">
+        <div class="section-head">
+          <h2>Nuestro Menú</h2>
+          <p>Selecciona una categoría para ver opciones y precios.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Categorías del menú">
+          <button class="tab active" data-target="platos" role="tab" aria-selected="true">Platos</button>
+          <button class="tab" data-target="bebidas" role="tab" aria-selected="false">Bebidas</button>
+        </div>
+
+        <div class="menu-grid active" id="platos" role="tabpanel">
+          <article class="menu-card"><h3>Lomo a la brasa</h3><p>Con papas rústicas y chimichurri.</p><span>S/ 42</span></article>
+          <article class="menu-card"><h3>Risotto de hongos</h3><p>Arroz cremoso con parmesano.</p><span>S/ 38</span></article>
+          <article class="menu-card"><h3>Salmón cítrico</h3><p>Con puré de coliflor asada.</p><span>S/ 46</span></article>
+          <article class="menu-card"><h3>Pasta trufada</h3><p>Tagliatelle en salsa de trufa.</p><span>S/ 40</span></article>
+          <article class="menu-card"><h3>Pollo mediterráneo</h3><p>Con vegetales grillados.</p><span>S/ 35</span></article>
+          <article class="menu-card"><h3>Hamburguesa gourmet</h3><p>Pan brioche y queso madurado.</p><span>S/ 34</span></article>
+          <article class="menu-card"><h3>Tacos de cochinita</h3><p>Con cebolla encurtida y salsa roja.</p><span>S/ 32</span></article>
+          <article class="menu-card"><h3>Ceviche clásico</h3><p>Pesca fresca y camote glaseado.</p><span>S/ 39</span></article>
+        </div>
+
+        <div class="menu-grid" id="bebidas" role="tabpanel" hidden>
+          <article class="menu-card"><h3>Limonada de hierbabuena</h3><p>Refrescante y natural.</p><span>S/ 12</span></article>
+          <article class="menu-card"><h3>Maracuyá sour</h3><p>Cóctel de autor.</p><span>S/ 24</span></article>
+          <article class="menu-card"><h3>Mojito clásico</h3><p>Ron, menta y lima.</p><span>S/ 22</span></article>
+          <article class="menu-card"><h3>Vino tinto copa</h3><p>Reserva de la casa.</p><span>S/ 26</span></article>
+          <article class="menu-card"><h3>Espresso doble</h3><p>Café premium.</p><span>S/ 10</span></article>
+          <article class="menu-card"><h3>Té de frutos rojos</h3><p>Infusión artesanal.</p><span>S/ 11</span></article>
+          <article class="menu-card"><h3>Jugo verde detox</h3><p>Piña, espinaca y jengibre.</p><span>S/ 15</span></article>
+          <article class="menu-card"><h3>Agua mineral</h3><p>Con o sin gas.</p><span>S/ 8</span></article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="productos">
+        <div class="container">
+          <div class="section-head">
+            <h2>Productos y servicios</h2>
+            <p>Selecciona un producto para solicitar información o pedido.</p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card">
+              <h3>Box Parrillero Premium</h3>
+              <p>Corte madurado, salsa de la casa y acompañamientos.</p>
+              <span>S/ 120</span>
+              <button class="btn product-btn" data-producto="Box Parrillero Premium">Solicitar</button>
+            </article>
+            <article class="product-card">
+              <h3>Postres para eventos</h3>
+              <p>Mini tartas, brownies y mousse para 20 personas.</p>
+              <span>S/ 180</span>
+              <button class="btn product-btn" data-producto="Postres para eventos">Solicitar</button>
+            </article>
+            <article class="product-card">
+              <h3>Catering corporativo</h3>
+              <p>Servicio completo para empresas y reuniones.</p>
+              <span>Desde S/ 55 p/p</span>
+              <button class="btn product-btn" data-producto="Catering corporativo">Solicitar</button>
+            </article>
+            <article class="product-card">
+              <h3>Clases de cocina</h3>
+              <p>Taller práctico con chef del restaurante.</p>
+              <span>S/ 95</span>
+              <button class="btn product-btn" data-producto="Clases de cocina">Solicitar</button>
+            </article>
+          </div>
+
+          <form id="productForm" class="product-form" novalidate>
+            <h3>Solicitud rápida</h3>
+            <p id="selectedProduct">Producto seleccionado: ninguno</p>
+            <label>
+              Nombre
+              <input id="cliente" type="text" required />
+            </label>
+            <label>
+              Teléfono
+              <input id="telefono" type="tel" required placeholder="999999999" />
+            </label>
+            <button type="submit" class="btn">Enviar solicitud</button>
+            <p id="productMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="espacios">
+        <div class="container">
+          <div class="section-head">
+            <h2>Conoce nuestros espacios</h2>
+            <p>Fotos del salón principal, terraza, barra, cocina abierta y más.</p>
+          </div>
+
+          <div class="gallery">
+            <figure><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Salón principal del restaurante" /><figcaption>Salón principal</figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=1200&q=80" alt="Terraza exterior del restaurante" /><figcaption>Terraza</figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1200&q=80" alt="Barra de cocteles" /><figcaption>Barra de cócteles</figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Cocina abierta del local" /><figcaption>Cocina abierta</figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=80" alt="Zona privada para eventos" /><figcaption>Zona privada</figcaption></figure>
+            <figure><img src="https://images.unsplash.com/photo-1555992336-fb0d29498b13?auto=format&fit=crop&w=1200&q=80" alt="Área de postres y café" /><figcaption>Rincón de café</figcaption></figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Casa Brasa · Av. Gourmet 123 · Contacto: +51 999 999 999</p>
+    </footer>
+
+    <script src="scrip.js"></script>
+  </body>
+</html>
