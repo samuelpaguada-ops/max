@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuego & Sabor | Restaurante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="nav">
+        <h1>Fuego & Sabor</h1>
+        <ul>
+          <li><a href="#comidas">Comidas</a></li>
+          <li><a href="#bebidas">Bebidas</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#visita">Visítanos</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content reveal">
+        <p class="tag">Sabores intensos · Colores vivos · Espacios para compartir</p>
+        <h2>Conoce nuestro lugar, menú completo y bebidas refrescantes</h2>
+        <button id="menuBtn">Ver carta</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="portada" class="reveal info-grid">
+        <article>
+          <h3>Horarios</h3>
+          <p><strong>Abrimos:</strong> Lunes a Domingo, 12:00 PM</p>
+          <p><strong>Cerramos:</strong> 11:30 PM</p>
+        </article>
+        <article>
+          <h3>Ubicación</h3>
+          <p>Av. Principal 123, Centro Histórico</p>
+          <a class="text-link" target="_blank" rel="noopener noreferrer" href="https://maps.google.com/?q=Av.+Principal+123+Centro+Historico">Ver en Google Maps</a>
+        </article>
+      </section>
+
+      <section id="comidas" class="menu-section">
+        <h3 class="section-title reveal">Área de comidas</h3>
+        <div class="cards">
+          <article class="card reveal" data-type="comida">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Costillas con salsa picante" />
+            <div>
+              <h4>Costillas Inferno</h4>
+              <p>Costillas ahumadas, glaseado de chile y miel.</p>
+              <span>$18.90</span>
+            </div>
+          </article>
+          <article class="card reveal" data-type="comida">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80" alt="Pizza artesanal picante" />
+            <div>
+              <h4>Pizza Dragón Rojo</h4>
+              <p>Mozzarella, pepperoni, jalapeño y aceite de ají.</p>
+              <span>$14.50</span>
+            </div>
+          </article>
+          <article class="card reveal" data-type="comida">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=80" alt="Hamburguesa artesanal" />
+            <div>
+              <h4>Hamburguesa Fuego</h4>
+              <p>Carne premium, queso cheddar y cebolla caramelizada.</p>
+              <span>$13.20</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="bebidas" class="menu-section">
+        <h3 class="section-title reveal">Área de bebidas y refrescos</h3>
+        <div class="cards">
+          <article class="card reveal" data-type="bebida">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=1200&q=80" alt="Limonada fresca" />
+            <div>
+              <h4>Limonada de la casa</h4>
+              <p>Limón fresco, menta y toque de jengibre.</p>
+              <span>$4.50</span>
+            </div>
+          </article>
+          <article class="card reveal" data-type="bebida">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1200&q=80" alt="Refresco artesanal" />
+            <div>
+              <h4>Refresco tropical</h4>
+              <p>Maracuyá, piña y soda natural.</p>
+              <span>$5.20</span>
+            </div>
+          </article>
+          <article class="card reveal" data-type="bebida">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1200&q=80" alt="Coctel sin alcohol" />
+            <div>
+              <h4>Sunset Zero</h4>
+              <p>Coctel sin alcohol con frutos rojos y naranja.</p>
+              <span>$6.00</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="filter-panel reveal">
+        <h3>Explorar por tipo</h3>
+        <div class="menu-actions">
+          <button class="filter-btn active" data-filter="all">Todo</button>
+          <button class="filter-btn" data-filter="comida">Solo comidas</button>
+          <button class="filter-btn" data-filter="bebida">Solo bebidas</button>
+        </div>
+        <p id="filterStatus" aria-live="polite"></p>
+      </section>
+
+      <section id="fotos" class="gallery-section reveal">
+        <h3 class="section-title">Fotos del establecimiento y platos</h3>
+        <div class="photo-grid">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" alt="Salón principal del restaurante" />
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80" alt="Zona interior iluminada" />
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80" alt="Plato especial servido" />
+          <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=1200&q=80" alt="Postre y bebida en mesa" />
+        </div>
+      </section>
+
+      <section id="galeria" class="upload-section reveal">
+        <h3>Álbum de momentos lindos</h3>
+        <p>Sube tus fotos favoritas del restaurante e instalaciones (máx. 6 imágenes).</p>
+        <input id="albumInput" type="file" accept="image/*" multiple />
+        <p id="uploadMessage" aria-live="polite"></p>
+        <div id="albumPreview" class="photo-grid"></div>
+      </section>
+
+      <section id="visita" class="map-section reveal">
+        <h3>Encuéntranos en Google Maps</h3>
+        <iframe
+          title="Mapa de ubicación del restaurante"
+          src="https://maps.google.com/maps?q=Av.%20Principal%20123%20Centro%20Historico&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
